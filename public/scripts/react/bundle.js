@@ -27647,7 +27647,7 @@ var App = React.createClass({displayName: "App",
 
     render : function() {
         return (
-            React.createElement("div", null, 
+            React.createElement("div", {className: "body-container"}, 
                 React.createElement(Header, null), 
                 React.createElement(RouteHandler, null)
             )
@@ -27724,8 +27724,9 @@ var PostPreview = React.createClass({displayName: "PostPreview",
 
     render : function() {
         return (
-            React.createElement("div", null, 
-                React.createElement("a", {href: "#", onClick: this.loadPost}, "Post Id : ", this.props.post.id)
+            React.createElement("a", {href: "#", className: "single-post", onClick: this.loadPost}, 
+                React.createElement("div", {className: "post-title"}, this.props.post.title), 
+                React.createElement("div", {className: "author-details"}, React.createElement("img", {src: this.props.post.author.photo, className: "author-photo"}), React.createElement("span", {className: "author-name"}, this.props.post.author.name))
             )
         )
     }
@@ -27761,8 +27762,15 @@ var SinglePostView = React.createClass({displayName: "SinglePostView",
 
     render : function() {
         return (
-            React.createElement("div", null, 
-                this.state.currentPost.slug
+            React.createElement("div", {className: "full-post"}, 
+                React.createElement("h1", {className: "post-title"}, this.state.currentPost.title), 
+                React.createElement("div", {className: "author-details"}, 
+                    React.createElement("img", {src: this.state.currentPost.author.photo, className: "author-photo"}), 
+                    React.createElement("span", {className: "author-name"}, this.state.currentPost.author.name)
+                ), 
+                React.createElement("div", {className: "post-content"}, 
+                    this.state.currentPost.description
+                )
             )
         )
     }
@@ -27783,8 +27791,8 @@ var Header = React.createClass({displayName: "Header",
 
     render : function() {
         return (
-            React.createElement("div", null, 
-                "Header"
+            React.createElement("div", {className: "header"}, 
+                React.createElement("h1", null, "React Isomorphic Blog")
             )
         )
     }

@@ -10,8 +10,8 @@ var Header = React.createClass({
 
     render : function() {
         return (
-            <div>
-                Header
+            <div className="header">
+                <h1>React Isomorphic Blog</h1>
             </div>
         )
     }

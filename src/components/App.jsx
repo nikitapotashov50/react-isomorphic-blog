@@ -11,7 +11,7 @@ var App = React.createClass({
 
     render : function() {
         return (
-            <div>
+            <div className="body-container">
                 <Header/>
                 <RouteHandler />
             </div>
