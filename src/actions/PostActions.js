@@ -1,9 +1,7 @@
 /**
  * Created by Sandeep on 28/06/15.
  */
-/**
- * Created by Sandeep on 06/05/15.
- */
+
 var alt = require('../alt');
 var request = require('superagent');
 var config = require('../../config');
@@ -11,8 +9,12 @@ var config = require('../../config');
 class PostActions {
     loadAllPosts(cb){
         var self = this;
+        NProgress.start();
         request.get(config.baseUrl+'/ajax/posts',function(err,response){
             self.actions.updatePosts(response.body);
+            setTimeout(function(){
+                NProgress.done();
+            },500);
             if(cb){
                 cb();
             }
@@ -21,8 +23,12 @@ class PostActions {
 
     loadSinglePost(id,cb){
         var self = this;
+        NProgress.start();
         request.get(config.baseUrl+'/ajax/post/'+id,function(err,response){
             self.actions.updateCurrentPost(response.body);
+            setTimeout(function(){
+                NProgress.done();
+            },500);
             if(cb){
                 cb();
             }

@@ -27588,9 +27588,7 @@ module.exports = function(arr, fn, initial){
 /**
  * Created by Sandeep on 28/06/15.
  */
-/**
- * Created by Sandeep on 06/05/15.
- */
+
 var alt = require('../alt');
 var request = require('superagent');
 var config = require('../../config');
@@ -27598,8 +27596,12 @@ var config = require('../../config');
 function PostActions(){"use strict";}
     Object.defineProperty(PostActions.prototype,"loadAllPosts",{writable:true,configurable:true,value:function(cb){"use strict";
         var self = this;
+        NProgress.start();
         request.get(config.baseUrl+'/ajax/posts',function(err,response){
             self.actions.updatePosts(response.body);
+            setTimeout(function(){
+                NProgress.done();
+            },500);
             if(cb){
                 cb();
             }
@@ -27608,8 +27610,12 @@ function PostActions(){"use strict";}
 
     Object.defineProperty(PostActions.prototype,"loadSinglePost",{writable:true,configurable:true,value:function(id,cb){"use strict";
         var self = this;
+        NProgress.start();
         request.get(config.baseUrl+'/ajax/post/'+id,function(err,response){
             self.actions.updateCurrentPost(response.body);
+            setTimeout(function(){
+                NProgress.done();
+            },500);
             if(cb){
                 cb();
             }
@@ -27674,7 +27680,7 @@ var PostListView = React.createClass({displayName: "PostListView",
         PostStore.listen(this.onChange);
     },
 
-    componentWillUnMount : function() {
+    componentWillUnmount : function() {
         PostStore.unlisten(this.onChange);
     },
 
@@ -27748,7 +27754,7 @@ var SinglePostView = React.createClass({displayName: "SinglePostView",
         PostStore.listen(this.onChange);
     },
 
-    componentWillUnMount : function() {
+    componentWillUnmount : function() {
         PostStore.unlisten(this.onChange);
     },
 
@@ -27782,6 +27788,7 @@ module.exports = SinglePostView;
 var React = require('react/addons');
 var RouteHandler = require('react-router').RouteHandler;
 var Link = require('react-router').Link;
+var PostActions = require('../actions/PostActions');
 
 var Header = React.createClass({displayName: "Header",
 
@@ -27789,10 +27796,17 @@ var Header = React.createClass({displayName: "Header",
         router: React.PropTypes.func
     },
 
+    showAllPosts : function(e){
+        e.preventDefault();
+        PostActions.loadAllPosts((function(){
+           this.context.router.transitionTo('postListView');
+        }).bind(this));
+    },
+
     render : function() {
         return (
             React.createElement("div", {className: "header"}, 
-                React.createElement("h1", null, "React Isomorphic Blog")
+                React.createElement("a", {href: "#", onClick: this.showAllPosts}, React.createElement("h1", null, "React Isomorphic Blog"))
             )
         )
     }
@@ -27800,7 +27814,7 @@ var Header = React.createClass({displayName: "Header",
 
 module.exports = Header;
 
-},{"react-router":37,"react/addons":52}],235:[function(require,module,exports){
+},{"../actions/PostActions":228,"react-router":37,"react/addons":52}],235:[function(require,module,exports){
 var React = require('react/addons');
 var Route = require('react-router').Route;
 var DefaultRoute = require('react-router').DefaultRoute;
@@ -27810,7 +27824,7 @@ var App = require('./components/App.jsx');
 
 var routes = (
     React.createElement(Route, {name: "home", path: "/", handler: App}, 
-        React.createElement(Route, {name: "postList", path: "/", handler: PostListView}), 
+        React.createElement(Route, {name: "postListView", path: "/", handler: PostListView}), 
         React.createElement(Route, {name: "singlePostView", path: "/post/:id/:slug", handler: SinglePostView})
     )
 );

@@ -30,7 +30,7 @@ exports.showSinglePost = function(req,res,next){
         var posts = response.body;
 
         posts.forEach(function(post){
-            if(post.id === id){
+            if(post.id === parseInt(id,10)){
                 res.locals.data = {
                     "PostStore" : {
                         "currentPost" : post

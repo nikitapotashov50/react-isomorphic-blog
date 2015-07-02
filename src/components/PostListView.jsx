@@ -14,7 +14,7 @@ var PostListView = React.createClass({
         PostStore.listen(this.onChange);
     },
 
-    componentWillUnMount : function() {
+    componentWillUnmount : function() {
         PostStore.unlisten(this.onChange);
     },
 

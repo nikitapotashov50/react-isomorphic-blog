@@ -7,7 +7,7 @@ var App = require('./components/App.jsx');
 
 var routes = (
     <Route name='home' path="/" handler={App}>
-        <Route name="postList" path="/" handler={PostListView}/>
+        <Route name="postListView" path="/" handler={PostListView}/>
         <Route name="singlePostView" path="/post/:id/:slug" handler={SinglePostView} />
     </Route>
 );
