@@ -19,7 +19,7 @@ var Header = React.createClass({
     render : function() {
         return (
             <div className="header">
-                <a href="#" onClick={this.showAllPosts}><h1>React Isomorphic Blog</h1></a>
+                <h1><a href="#" onClick={this.showAllPosts}>React Isomorphic Blog</a></h1>
             </div>
         )
     }

@@ -34,6 +34,11 @@ body{
     font-size: 34px;
 }
 
+.header h1 a{
+    text-decoration: none;
+    color: #455A64;
+}
+
 .single-post{
     display: block;
     padding: 15px 20px;

@@ -27806,7 +27806,7 @@ var Header = React.createClass({displayName: "Header",
     render : function() {
         return (
             React.createElement("div", {className: "header"}, 
-                React.createElement("a", {href: "#", onClick: this.showAllPosts}, React.createElement("h1", null, "React Isomorphic Blog"))
+                React.createElement("h1", null, React.createElement("a", {href: "#", onClick: this.showAllPosts}, "React Isomorphic Blog"))
             )
         )
     }
