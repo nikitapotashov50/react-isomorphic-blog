@@ -27647,10 +27647,6 @@ var Header = require('./header.jsx');
 
 var App = React.createClass({displayName: "App",
 
-    contextTypes: {
-        router: React.PropTypes.func
-    },
-
     render : function() {
         return (
             React.createElement("div", {className: "body-container"}, 
@@ -27817,7 +27813,6 @@ module.exports = Header;
 },{"../actions/PostActions":228,"react-router":37,"react/addons":52}],235:[function(require,module,exports){
 var React = require('react/addons');
 var Route = require('react-router').Route;
-var DefaultRoute = require('react-router').DefaultRoute;
 var PostListView = require('./components/PostListView.jsx');
 var SinglePostView = require('./components/SinglePostView.jsx');
 var App = require('./components/App.jsx');

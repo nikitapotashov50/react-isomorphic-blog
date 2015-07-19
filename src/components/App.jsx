@@ -5,10 +5,6 @@ var Header = require('./header.jsx');
 
 var App = React.createClass({
 
-    contextTypes: {
-        router: React.PropTypes.func
-    },
-
     render : function() {
         return (
             <div className="body-container">
