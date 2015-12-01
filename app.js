@@ -1,8 +1,3 @@
-/**
- * Express configurations.
- *
- * @type {exports|module.exports}
- */
 var Router = require('react-router');
 var React = require('react/addons');
 var express = require('express');

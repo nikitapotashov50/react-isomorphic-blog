@@ -1,10 +1,9 @@
 {
   "name": "nikita",
   "version": "1.0.0",
-  "description": "React Isomorphic Seed",
+  "description": "mini-blog",
   "main": "bin/www",
-  "author": "Sandeep Panda <sandeep@devmag.io>",
-  "license": "MIT",
+  "author": "Nikita Potashov",
   "dependencies": {
     "alt": "^0.14.5",
     "babel": "^4.7.16",
@@ -44,10 +43,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devmag-io/react-isomorphic-seed.git"
+    "url": "https://github.com/nikitapotashov50/mini-blog.git"
   },
   "bugs": {
-    "url": "https://github.com/devmag-io/react-isomorphic-seed/issues"
+    "url": "https://github.com/nikitapotashov50/mini-blog/issues"
   },
-  "homepage": "https://github.com/devmag-io/react-isomorphic-seed"
+  "homepage": "https://github.com/nikitapotashov50/mini-blog"
 }

@@ -1,6 +1,3 @@
-/**
- * Created by Sandeep on 28/04/15.
- */
 var alt = require('../alt');
 var PostActions = require('../actions/PostActions');
 
