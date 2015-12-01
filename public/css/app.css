@@ -9,14 +9,14 @@ html{
 }
 
 body{
-    background: #EEE;
+    background: #eed;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
 .body-container{
-    width: 900px;
-    background: #FFF;
+    width: 1000px;
+    background: #fff;
     margin: auto;
     -webkit-box-shadow: 0 0 10px #aaa;
     -moz-box-shadow: 0 0 10px #aaa;

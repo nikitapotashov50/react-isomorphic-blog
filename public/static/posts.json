@@ -1,52 +1,52 @@
 [
   {
     "id" : 1,
-    "slug" : "10-reasons-you-should-use-react-in-your-next-app",
-    "title" : "10 reasons to use React in your next project",
-    "description" : "React, developed by Facebook, is an open source library for building User Interfaces. As the front end world moves too fast you should not be hesitant to try out new things. I am a big fan of AngularJS and a few months back I started trying React. As React doesn't assume anything about rest of your tech stack it plays well with others. The biggest reason for me to try React was to create isomorphic apps that render on both client and server (with a little help from other libraries as well). In this article I am going to share 10 best reasons to use React in your next project.",
+    "slug" : "On the trail of Keith Jarrett's melodies",
+    "title" : "On the trail of Keith Jarrett's melodies",
+    "description" : "“So, this is a piano,” said Keith Jarrett, sitting down at the one that had been placed centre stage for him in the Royal Festival Hall on 20 November. Blowing on his hands to warm them, he acted as if he had never encountered such an instrument before, raising a chuckle from the hundreds of fans who had turned out to see the man in the flesh. For 40 years, Jarrett has been giving concerts like this – alone with the piano, playing his improvised music to a room full of rapt devotees. Notoriously grumpy – and now as well known for his tirades against cameras and coughing audience members as for his early days playing with Miles Davis – he has an almost eerie focus onstage, relieving the tension only very occasionally with his barbed observations about the excellence of the instrument, or the shuffling in the auditorium.Jarrett gave us a series of short pieces, each rendering separate and distinctive musical ideas. He began with an intricately woven flash of notes in both hands, criss-crossing the melodies that were by turns dark and haunting, or light and dancing. At particularly complex moments, when his arms were crossed over and the notes were flowing from his fingers faster than anyone could imagine them into existence, he leaned his ear down towards the keys, as if physical closeness could help his ideas more swiftly become sound.A couple of folk-inflected ballads followed; heart-achingly sweet melodies picked out above rumbling, sour arpeggios. Like Glenn Gould, the Canadian pianist best known for his recordings of Bach’s Goldberg Variations, Jarrett can’t help adding vocalisations as he plays, which are all the more evident in his quieter compositions. He rose and fell from his stool; we heard his guiding hum along with the melody, as well as the odd strangled shout, yelp and grunt. He might insist on absolute silence from the audience but his own noises seem completely uninhibited as the music spins around him.Although notorious for his curmudgeonly attitude to his fans, Jarrett was mostly restrained in this outing, allowing himself just one short, sweary outburst about killing a “f***ing camera”. At the age of 70 and with the power to sell out his concerts in just a few hours, you do wonder how much of the persona is genuine and how much of it is just giving the audience what it expects. A case in point came near the end, when he yielded to clamouring and gave a surprisingly simple and straightforward rendition of “Danny Boy”, an encore that long-time fans know well.Given that this recital was under the auspices of the London Jazz Festival, there was surprisingly little in Jarrett’s programme that could easily be identified as jazz. One piece, full of brisk rhythms and chunky chords, gradually revealed itself to be based on a modified 12-bar blues structure and another had haunting overtones surely pulled from the classic American songs of the first half of the 20th century. Indeed, this musical ghosting becomes a major preoccupation when you see Jarrett live. It is too easy to distract yourself in trying to follow the auditory trail he has laid for you – was that a bit of Debussy, or Bach, or Glass just then? – and lose the thread of what he plays next. The improvisational technique might have more in common with jazz but now, 40 years on from his bestselling live recording The Köln Concert, it’s difficult to characterise Jarrett’s output as anything other than contemporary classical music.If it needs a classification, that is. At one point, I became convinced that a particular piece was a Jarrett riff on Beethoven’s Bagatelle No 25 in A Minor – or Für Elise, as it is more commonly known. I was sure it was all there: the extended opening trill, the rising arpeggios in the left hand, the melody cascading from treble to bass and back again. Except, by the time I surfaced from my musing, there was no trace of Beethoven to be heard. A clashing, almost violent melody was dangling over a long drone in the bass. If you try too hard to pin down Jarrett’s music, it moves on without you.",
     "author" : {
-      "photo" : "/images/sandeep.png",
-      "name" : "Sandeep"
+      "photo" : "/images/np.jpg",
+      "name" : "Vincent Vega and Jules Winnfield"
     }
   },
   {
     "id" : 2,
-    "slug" : "creating-a-super-simple-todo-app-using-angular-2—tutorial",
-    "title" : "Creating a Super Simple Todo app Using Angular 2 — Tutorial",
-    "description" : "Angular 2 is already popular and so many JavaScript developers are eagerly waiting to try it out. You may have the idea that Angular 2 is going to introduce a lot of new & exciting features and remove several old concepts. So, in this tutorial I will show you how to create a super simple Todo app using Angular 2.0. In the process you will also learn how to use Components, Templates, Data Binding and a few other important stuff. So, let's start!",
+    "slug" : "Flux",
+    "title" : "Flux",
+    "description" : "Flux is the application architecture that Facebook uses for building client-side web applications. It complements React's composable view components by utilizing a unidirectional data flow. It's more of a pattern rather than a formal framework, and you can start using Flux immediately without a lot of new code.",
     "author" : {
-      "photo" : "/images/syed.jpg",
-      "name" : "Syed"
+      "photo" : "/images/nek.jpg",
+      "name" : "Nek Smith"
     }
   },
   {
     "id" : 3,
-    "slug" : "understanding-foundation-5-grid-system-tutorial",
-    "title" : "Understanding Foundation 5 Grid System — Tutorial",
-    "description" : "A grid system is used to place the website's elements in proper locations and control the overall structure of the website. It is a virtual structure of rows and columns, which when intersect, create rectangular containers for placing other elements.",
+    "slug" : "Why React?",
+    "title" : "Why React?",
+    "description" : "React is a JavaScript library for creating user interfaces by Facebook and Instagram. Many people choose to think of React as the V in MVC. We built React to solve one problem: building large applications with data that changes over time.",
     "author" : {
-      "photo" : "/images/sandeep.png",
-      "name" : "Sandeep"
+      "photo" : "/images/nek.jpg",
+      "name" : "Nek Smith"
     }
   },
   {
     "id" : 4,
-    "slug" : "creating-a-social-news-sharing-app-in-20-minutes-with-meteor",
-    "title" : "Creating a social news sharing app in 20 minutes with Meteor",
-    "description" : "Meteor 1.0 is already out and everybody is talking about its reactiveness. In this article I will show you how to create a basic social news sharing app (in other words a Hacker News clone) in just 20 minutes with Meteor. Obviously, the end product won't be as feature rich as Hacker News. But it will be simple and easy to extend. The source code is available on GitHub.",
+    "slug" : "Pulp fiction: Why wood is a dirty secret of clean energy",
+    "title" : "Pulp fiction: Why wood is a dirty secret of clean energy",
+    "description" : "The heavy power lines and narrow roads between the steam-billowing towers of three of England’s biggest power plants traverse an energy industry in upheaval.Shuttered coal mines are flanked by emerald pastures. Towering wind turbines and solar arrays have taken root in windblown cereal fields.",
     "author" : {
-      "photo" : "/images/syed.jpg",
-      "name" : "Syed"
+      "photo" : "/images/np.jpg",
+      "name" : "Vincent Vega and Jules Winnfield"
     }
   },
   {
     "id" : 5,
-    "slug" : "introduction-to-javascript-immutability-with-immutablejs",
-    "title" : "Introduction to JavaScript Immutability with Immutable.js",
-    "description" : "Immutable.js is a JavaScript library by Facebook that lets you work with persistent immutable data collections. Immutability means once a collection is created, it can't be changed (mutated). With Immutable.js, operations like push, unshift, set etc will return new immutable collections instead of changing the original collection. So, let's see why immutability is useful and explore how Immutable.js lets you write immutable code.",
+    "slug" : "React To The Future With Isomorphic Apps",
+    "title" : "React To The Future With Isomorphic Apps",
+    "description" : "Things often come full circle in software engineering. The web in particular started with servers delivering content down to the client. Recently, with the creation of modern web frameworks such as AngularJS and Ember, we’ve seen a push to render on the client and only use a server for an API. We’re now seeing a possible return or, rather, more of a combination of both architectures happening.",
     "author" : {
-      "photo" : "/images/sandeep.png",
-      "name" : "Sandeep"
+      "photo" : "/images/nek.jpg",
+      "name" : "Nek Smith"
     }
   }
 ]

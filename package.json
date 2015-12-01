@@ -1,5 +1,5 @@
 {
-  "name": "React-Isomorphic-Seed",
+  "name": "nikita",
   "version": "1.0.0",
   "description": "React Isomorphic Seed",
   "main": "bin/www",
@@ -12,6 +12,7 @@
     "cookie-parser": "^1.3.4",
     "express": "^4.12.3",
     "express-session": "^1.10.4",
+    "gulp-install": "^0.6.0",
     "iso": "^4.0.2",
     "jade": "^1.9.2",
     "moment": "^2.10.2",
@@ -21,7 +22,7 @@
   },
   "devDependencies": {
     "browserify": "^9.0.3",
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.0",
     "gulp-nodemon": "^2.0.2",
     "nodemon": "^1.3.7",
     "reactify": "^1.1.0",
@@ -34,5 +35,19 @@
   "dest": {
     "app": "bundle.js",
     "dist": "public/scripts/react"
-  }
+  },
+  "bin": {
+    "nikita": "www.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devmag-io/react-isomorphic-seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devmag-io/react-isomorphic-seed/issues"
+  },
+  "homepage": "https://github.com/devmag-io/react-isomorphic-seed"
 }

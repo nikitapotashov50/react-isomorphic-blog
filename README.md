@@ -12,3 +12,4 @@ Read full article [here](http://engineering.devmag.io/post/1/creating-an-isomorp
 2. `npm install` to install dependencies.
 3. Run `gulp bundle` and `gulp watch`.
 4. Run `gulp nodemon` to start the server at port 8080.
+# mini-blog
