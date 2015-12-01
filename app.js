@@ -7,7 +7,6 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 
-//Define Routes here
 var posts = require('./routes/post.routes');
 var routes = require('./src/routes.jsx');
 var alt = require('./src/alt');
@@ -22,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({limit : '50mb'}));
 app.use(cookieParser());
 
-//use Routes here
+
 app.use('/',posts);
 
 app.use(function (req, res) {
@@ -41,8 +40,6 @@ app.use(function (req, res) {
     });
 });
 
-// production error handler
-// no stacktraces leaked to user
 app.use(function(err, req, res, next) {
 
     if(!err.status || err.status !== 404){
